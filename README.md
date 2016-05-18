@@ -8,7 +8,8 @@ Here, I'm going to keep updating my experience and and little demo projects and 
 ***
 ##Here's the navigation:
 1. [Clock](#Clock)
+<br/>
 ***
-## 1. <a id="Clock" href="https://github.com/Laurensesss/Learning-iOS-Programming-with-Swift/tree/master/Clock">Clock</a>
+## Project 01 - <a id="Clock" href="https://github.com/Laurensesss/Learning-iOS-Programming-with-Swift/tree/master/Clock">Clock</a>
 
 ![The sample clock interface](/Users/shitao/Desktop/Clock.png)
