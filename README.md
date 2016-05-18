@@ -12,4 +12,4 @@ Here, I'm going to keep updating my experience and and little demo projects and 
 ***
 ## Project 01 - <a id="Clock" href="https://github.com/Laurensesss/Learning-iOS-Programming-with-Swift/tree/master/Clock">Clock</a>
 
-![The sample clock interface](Learning-iOS-Programming-with-Swift/blob/master/Final%20Display%20Pictures/Clock.png)
+![The sample clock interface](https://github.com/Laurensesss/Learning-iOS-Programming-with-Swift/blob/master/Final%20Display%20Pictures/Clock.png)
