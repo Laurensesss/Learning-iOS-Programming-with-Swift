@@ -25,6 +25,7 @@ class ViewController: UIViewController {
   // MARK: - Life Cycle
   override func viewWillAppear(animated: Bool) {
     super.viewWillAppear(true)
+    updateTimeLabel()
     NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateTimeLabel", userInfo: nil, repeats: true)
   }
   
