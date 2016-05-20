@@ -8,8 +8,11 @@ Here, I'm going to keep updating my experience and and little demo projects and 
 ***
 ##Here's the navigation:
 1. [Clock](#Clock)
+2. [StopWatch](#StopWatch)
 
 ***
 ## Project 01 - <a id="Clock" href="https://github.com/Laurensesss/Learning-iOS-Programming-with-Swift/tree/master/Project01_Clock">Clock</a>
 
 ![The sample clock interface](https://github.com/Laurensesss/Learning-iOS-Programming-with-Swift/blob/master/Final%20Display%20Pictures/Clock.png)
+
+## Project 02 - <a id="StopWatch" href="https://github.com/Laurensesss/Learning-iOS-Programming-with-Swift/tree/master/Project02_StopWatch">StopWatch</a>
