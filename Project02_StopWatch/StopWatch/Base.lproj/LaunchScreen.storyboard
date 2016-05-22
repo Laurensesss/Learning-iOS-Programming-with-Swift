@@ -44,8 +44,8 @@
                         <constraints>
                             <constraint firstItem="Hb8-mv-l21" firstAttribute="top" secondItem="d1H-Kf-q43" secondAttribute="bottom" constant="8" symbolic="YES" id="4Pt-d8-5ze"/>
                             <constraint firstItem="eXC-bY-q7X" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="OiV-lp-nKo"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Hb8-mv-l21" secondAttribute="bottom" constant="20" id="jd1-Bd-eQr"/>
                             <constraint firstItem="eXC-bY-q7X" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="kIn-DQ-lQX"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Hb8-mv-l21" secondAttribute="bottom" constant="20" id="nL0-Cy-SZe"/>
                             <constraint firstItem="d1H-Kf-q43" firstAttribute="centerX" secondItem="Hb8-mv-l21" secondAttribute="centerX" id="q8H-vi-e8N"/>
                             <constraint firstItem="Hb8-mv-l21" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="yXF-MW-8NI"/>
                         </constraints>
