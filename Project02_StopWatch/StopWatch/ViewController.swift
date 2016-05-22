@@ -13,16 +13,29 @@ class ViewController: UIViewController {
   // MARK: - Properties
   @IBOutlet var orangeButtons: [UIButton]!
   
-  
+  @IBOutlet weak var elapsedTimeLabel: UILabel!
+  let stopWatch = StopWatch()
   
   
   // MARK: - Methods
+  func updateElapsedTimeLabel(timer: NSTimer) {
+    if stopWatch.isRunning {
+      elapsedTimeLabel.text = stopWatch.elapsedTimeAsString
+    }
+    else{
+      timer.invalidate()
+    }
+  }
   
+  @IBAction func startButtonTapped(sender: UIButton) {
+    stopWatch.start()
+    NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "updateElapsedTimeLabel:", userInfo: nil, repeats: true)
+  }
   
+  @IBAction func stopButtonTapped(sender: UIButton) {
+    stopWatch.stop()
+  }
   
-  
-  
-  // MARK: - Life Cycle
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -30,10 +43,6 @@ class ViewController: UIViewController {
     for orangeButton in orangeButtons {
       orangeButton.layer.cornerRadius = 5
     }
-  }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
   }
 
 

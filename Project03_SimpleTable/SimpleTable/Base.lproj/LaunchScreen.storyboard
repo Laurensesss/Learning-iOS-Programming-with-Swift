@@ -17,19 +17,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmS-pS-Avw">
-                                <rect key="frame" x="217" y="279" width="167" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Pin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmS-pS-Avw">
+                                <rect key="frame" x="232" y="279" width="136" height="42"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" All rights reserved." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5u-bp-a0r">
+                                <rect key="frame" x="226" y="559" width="148" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2016年 石韬. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfi-EM-5TC">
+                                <rect key="frame" x="200" y="530" width="201" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="G5u-bp-a0r" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="71v-DK-Lac"/>
+                            <constraint firstItem="G5u-bp-a0r" firstAttribute="top" secondItem="rfi-EM-5TC" secondAttribute="bottom" constant="8" symbolic="YES" id="Ger-ay-ViG"/>
+                            <constraint firstItem="rfi-EM-5TC" firstAttribute="centerX" secondItem="G5u-bp-a0r" secondAttribute="centerX" id="MMU-WC-6UG"/>
                             <constraint firstItem="nmS-pS-Avw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Oo7-pv-KvF"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="G5u-bp-a0r" secondAttribute="bottom" constant="20" id="Oqc-IH-I3O"/>
                             <constraint firstItem="nmS-pS-Avw" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="bZX-XG-iEs"/>
+                            <constraint firstItem="rfi-EM-5TC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="iR1-Pf-gbY"/>
                         </constraints>
                     </view>
                 </viewController>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47520EF21CF1554100A7ACD5 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47520EF11CF1554100A7ACD5 /* StopWatch.swift */; };
 		47F509DB1CEF2AAD00A98372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F509DA1CEF2AAD00A98372 /* AppDelegate.swift */; };
 		47F509DD1CEF2AAD00A98372 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F509DC1CEF2AAD00A98372 /* ViewController.swift */; };
 		47F509E01CEF2AAD00A98372 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47F509DE1CEF2AAD00A98372 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47520EF11CF1554100A7ACD5 /* StopWatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
 		47F509D71CEF2AAC00A98372 /* StopWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StopWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F509DA1CEF2AAD00A98372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47F509DC1CEF2AAD00A98372 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				47F509DA1CEF2AAD00A98372 /* AppDelegate.swift */,
 				47F509DC1CEF2AAD00A98372 /* ViewController.swift */,
 				47F509DE1CEF2AAD00A98372 /* Main.storyboard */,
+				47520EF11CF1554100A7ACD5 /* StopWatch.swift */,
 				47F509E11CEF2AAD00A98372 /* Assets.xcassets */,
 				47F509E31CEF2AAD00A98372 /* LaunchScreen.storyboard */,
 				47F509E61CEF2AAD00A98372 /* Info.plist */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47520EF21CF1554100A7ACD5 /* StopWatch.swift in Sources */,
 				47F509DD1CEF2AAD00A98372 /* ViewController.swift in Sources */,
 				47F509DB1CEF2AAD00A98372 /* AppDelegate.swift in Sources */,
 			);
@@ -287,6 +291,7 @@
 				47F509EB1CEF2AAD00A98372 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
