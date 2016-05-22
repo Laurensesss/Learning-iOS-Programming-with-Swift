@@ -18,58 +18,110 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7G-dJ-6I7">
-                                <rect key="frame" x="237" y="70" width="126" height="42"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mvk-lu-Z2f">
-                                <rect key="frame" x="40" y="544" width="520" height="36"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1Re-ix-Syn">
+                                <rect key="frame" x="40" y="160" width="520" height="432"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s48-dF-Yta">
-                                        <rect key="frame" x="0.0" y="0.0" width="250" height="36"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kM0-87-0V3">
+                                        <rect key="frame" x="0.0" y="0.0" width="520" height="206"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXC-Wc-ARK">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="206"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Resume">
+                                                    <color key="titleColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="resumeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jaz-N1-ser"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Bz-IB-YoK">
+                                                <rect key="frame" x="270" y="0.0" width="250" height="206"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Pause">
+                                                    <color key="titleColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="pauseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="skh-Y7-jvo"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <animations/>
-                                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Start">
-                                            <color key="titleColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BX6-dp-O4b"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HX0-8D-LR4">
-                                        <rect key="frame" x="270" y="0.0" width="250" height="36"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mvk-lu-Z2f">
+                                        <rect key="frame" x="0.0" y="226" width="520" height="206"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s48-dF-Yta">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="206"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Start">
+                                                    <color key="titleColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BX6-dp-O4b"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HX0-8D-LR4">
+                                                <rect key="frame" x="270" y="0.0" width="250" height="206"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Stop">
+                                                    <color key="titleColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d2S-rf-eyb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <animations/>
-                                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Stop">
-                                            <color key="titleColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d2S-rf-eyb"/>
-                                        </connections>
-                                    </button>
+                                    </stackView>
                                 </subviews>
                                 <animations/>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7G-dJ-6I7">
+                                <rect key="frame" x="211" y="70" width="179" height="60"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lrs-3M-1wA">
+                                <rect key="frame" x="518" y="64" width="42" height="72"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="↵">
+                                    <color key="titleColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="returnButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eMB-cD-F8p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="g7G-dJ-6I7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="1Re-Gh-yse"/>
-                            <constraint firstItem="mvk-lu-Z2f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="91b-vZ-ji6"/>
+                            <constraint firstItem="g7G-dJ-6I7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="EOy-VO-YYK"/>
                             <constraint firstItem="g7G-dJ-6I7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MAR-7v-Kh4"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="mvk-lu-Z2f" secondAttribute="trailing" constant="20" id="Qrc-oI-hn9"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mvk-lu-Z2f" secondAttribute="bottom" constant="20" id="W9i-YN-Tb2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Re-ix-Syn" secondAttribute="trailing" constant="20" id="Upz-ua-YyU"/>
+                            <constraint firstItem="1Re-ix-Syn" firstAttribute="top" secondItem="g7G-dJ-6I7" secondAttribute="bottom" constant="30" id="WHE-wb-Stc"/>
+                            <constraint firstItem="Lrs-3M-1wA" firstAttribute="trailing" secondItem="1Re-ix-Syn" secondAttribute="trailing" id="X2B-e7-9NU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Re-ix-Syn" secondAttribute="bottom" constant="8" id="rBF-bY-2X3"/>
+                            <constraint firstItem="Lrs-3M-1wA" firstAttribute="baseline" secondItem="g7G-dJ-6I7" secondAttribute="baseline" id="sAT-Hd-Ycz"/>
+                            <constraint firstItem="1Re-ix-Syn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="ux5-SZ-LeF"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="elapsedTimeLabel" destination="g7G-dJ-6I7" id="QK2-IF-rm0"/>
-                        <outletCollection property="orangeButtons" destination="HX0-8D-LR4" collectionClass="NSMutableArray" id="GFe-Jv-aPA"/>
+                        <outletCollection property="orangeButtons" destination="7Bz-IB-YoK" collectionClass="NSMutableArray" id="6Lj-sI-Nwc"/>
+                        <outletCollection property="orangeButtons" destination="JXC-Wc-ARK" collectionClass="NSMutableArray" id="C1L-Hq-LR0"/>
                         <outletCollection property="orangeButtons" destination="s48-dF-Yta" collectionClass="NSMutableArray" id="J2q-Wy-Vrr"/>
+                        <outletCollection property="orangeButtons" destination="HX0-8D-LR4" collectionClass="NSMutableArray" id="GFe-Jv-aPA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

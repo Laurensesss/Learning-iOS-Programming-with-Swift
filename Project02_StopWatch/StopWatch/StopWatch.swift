@@ -10,11 +10,9 @@ import Foundation
 
 class StopWatch {
   // MARK: - Properties
-  private var startTime: NSDate?
+  var startTime: NSDate?
   
-  var isRunning: Bool {
-    return startTime != nil
-  }
+  var isRunning: Bool = false
   
   private var elapsedTime: NSTimeInterval {
     if let startTime = self.startTime {
@@ -26,7 +24,7 @@ class StopWatch {
   }
   
   var elapsedTimeAsString: String {
-    if isRunning {
+    if startTime != nil {
       return String(format: "%02d:%02d.%d", Int(self.elapsedTime / 60), Int(self.elapsedTime % 60), Int(self.elapsedTime * 10 % 10))
     }
     else{
@@ -37,17 +35,19 @@ class StopWatch {
   // MARK: - Methods
   func start() {
     self.startTime = NSDate()
+    isRunning = true
   }
   
   func stop() {
     self.startTime = nil
+    isRunning = false
   }
   
   func pause() {
-    
+    isRunning = false
   }
   
   func resume() {
-    
+    isRunning = true
   }
 }
