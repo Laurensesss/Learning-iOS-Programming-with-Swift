@@ -17,6 +17,7 @@ Here, I'm going to keep updating my experience and and little demo projects and 
 ![The sample clock interface](https://github.com/Laurensesss/Learning-iOS-Programming-with-Swift/blob/master/Final%20Display%20Pictures/Clock.png)
 
 ## Project 02 - <a id="StopWatch" href="https://github.com/Laurensesss/Learning-iOS-Programming-with-Swift/tree/master/Project02_StopWatch">Stop Watch</a>
+![StopWatch](https://github.com/Laurensesss/Learning-iOS-Programming-with-Swift/blob/master/Final%20Display%20Pictures/StopWatch.png)
 
 ## Project 03 - <a id="SimpleTable" href="https://github.com/Laurensesss/Learning-iOS-Programming-with-Swift/tree/master/Project03_SimpleTable">Simple Table</a>
 ![SimpleTable](https://github.com/Laurensesss/Learning-iOS-Programming-with-Swift/blob/master/Final%20Display%20Pictures/SimpleTable.png)
