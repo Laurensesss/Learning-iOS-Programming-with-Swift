@@ -28,9 +28,21 @@ class RestaurantTableViewController: UITableViewController {
       ]
   
   
+  var selectedIndexPath: NSIndexPath?
+  
+  
   override func viewWillAppear(animated: Bool) {
     super.viewWillAppear(true)
+    
     navigationController?.hidesBarsOnSwipe = true
+    
+  }
+  
+  override func viewDidAppear(animated: Bool) {
+    super.viewDidAppear(true)
+    if let indexPath = selectedIndexPath {
+      tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
   }
   
   override func viewDidLoad() {
@@ -158,6 +170,10 @@ class RestaurantTableViewController: UITableViewController {
     
   }
   
+  
+  
+  
+  
   //  // Override to support editing the table view.
 //    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
 //      if editingStyle == .Delete {
@@ -199,6 +215,7 @@ class RestaurantTableViewController: UITableViewController {
         let destinationController = segue.destinationViewController as! RestaurantDetailViewController
         destinationController.restaurant = restaurants[indexPath.row]
         destinationController.phoneNumber = restaurants[indexPath.row].phoneNumber
+        selectedIndexPath = indexPath
       }
     }
   }

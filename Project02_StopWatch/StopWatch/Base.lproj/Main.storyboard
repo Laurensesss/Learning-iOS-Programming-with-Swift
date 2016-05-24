@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1Re-ix-Syn">
-                                <rect key="frame" x="20" y="160" width="560" height="432"/>
+                                <rect key="frame" x="20" y="140" width="560" height="440"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kM0-87-0V3">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="206"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="210"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXC-Wc-ARK">
-                                                <rect key="frame" x="0.0" y="0.0" width="270" height="206"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="270" height="210"/>
                                                 <animations/>
                                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -37,7 +37,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Bz-IB-YoK">
-                                                <rect key="frame" x="290" y="0.0" width="270" height="206"/>
+                                                <rect key="frame" x="290" y="0.0" width="270" height="210"/>
                                                 <animations/>
                                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -52,10 +52,10 @@
                                         <animations/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mvk-lu-Z2f">
-                                        <rect key="frame" x="0.0" y="226" width="560" height="206"/>
+                                        <rect key="frame" x="0.0" y="230" width="560" height="210"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s48-dF-Yta">
-                                                <rect key="frame" x="0.0" y="0.0" width="270" height="206"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="270" height="210"/>
                                                 <animations/>
                                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -67,7 +67,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HX0-8D-LR4">
-                                                <rect key="frame" x="290" y="0.0" width="270" height="206"/>
+                                                <rect key="frame" x="290" y="0.0" width="270" height="210"/>
                                                 <animations/>
                                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -84,15 +84,15 @@
                                 </subviews>
                                 <animations/>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7G-dJ-6I7">
-                                <rect key="frame" x="211" y="70" width="179" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7G-dJ-6I7">
+                                <rect key="frame" x="20" y="50" width="560" height="60"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lrs-3M-1wA">
-                                <rect key="frame" x="538" y="64" width="42" height="72"/>
+                                <rect key="frame" x="538" y="38" width="42" height="72"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <state key="normal" title="↵">
@@ -106,14 +106,15 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="g7G-dJ-6I7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="EOy-VO-YYK"/>
-                            <constraint firstItem="g7G-dJ-6I7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MAR-7v-Kh4"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1Re-ix-Syn" secondAttribute="trailing" id="Upz-ua-YyU"/>
-                            <constraint firstItem="1Re-ix-Syn" firstAttribute="top" secondItem="g7G-dJ-6I7" secondAttribute="bottom" constant="30" id="WHE-wb-Stc"/>
-                            <constraint firstItem="Lrs-3M-1wA" firstAttribute="trailing" secondItem="1Re-ix-Syn" secondAttribute="trailing" id="X2B-e7-9NU"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Re-ix-Syn" secondAttribute="bottom" constant="8" id="rBF-bY-2X3"/>
-                            <constraint firstItem="Lrs-3M-1wA" firstAttribute="baseline" secondItem="g7G-dJ-6I7" secondAttribute="baseline" id="sAT-Hd-Ycz"/>
-                            <constraint firstItem="1Re-ix-Syn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ux5-SZ-LeF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lrs-3M-1wA" secondAttribute="trailing" id="1f8-CW-UVe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g7G-dJ-6I7" secondAttribute="trailing" id="6hV-Jb-xii"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Re-ix-Syn" secondAttribute="bottom" constant="20" id="ZHU-bU-k1V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Re-ix-Syn" secondAttribute="trailing" id="ZRT-8R-QoA"/>
+                            <constraint firstItem="Lrs-3M-1wA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="dCD-Y9-4wh"/>
+                            <constraint firstItem="g7G-dJ-6I7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="im6-gW-k4S"/>
+                            <constraint firstItem="1Re-ix-Syn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jCN-x0-W5y"/>
+                            <constraint firstItem="1Re-ix-Syn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="120" id="qyV-aY-Gja"/>
+                            <constraint firstItem="g7G-dJ-6I7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="w7w-nW-nqc"/>
                         </constraints>
                     </view>
                     <connections>
