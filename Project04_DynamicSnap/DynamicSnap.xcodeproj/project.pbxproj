@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47D0CA3A1CB7800B00D15C10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0CA391CB7800B00D15C10 /* AppDelegate.swift */; };
+		47D0CA3C1CB7800B00D15C10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0CA3B1CB7800B00D15C10 /* ViewController.swift */; };
+		47D0CA3F1CB7800B00D15C10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D0CA3D1CB7800B00D15C10 /* Main.storyboard */; };
+		47D0CA411CB7800B00D15C10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47D0CA401CB7800B00D15C10 /* Assets.xcassets */; };
+		47D0CA441CB7800B00D15C10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D0CA421CB7800B00D15C10 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		47D0CA361CB7800B00D15C10 /* DynamicSnap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicSnap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D0CA391CB7800B00D15C10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		47D0CA3B1CB7800B00D15C10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		47D0CA3E1CB7800B00D15C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		47D0CA401CB7800B00D15C10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		47D0CA431CB7800B00D15C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		47D0CA451CB7800B00D15C10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47D0CA331CB7800B00D15C10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47D0CA2D1CB7800B00D15C10 = {
+			isa = PBXGroup;
+			children = (
+				47D0CA381CB7800B00D15C10 /* DynamicSnap */,
+				47D0CA371CB7800B00D15C10 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47D0CA371CB7800B00D15C10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47D0CA361CB7800B00D15C10 /* DynamicSnap.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47D0CA381CB7800B00D15C10 /* DynamicSnap */ = {
+			isa = PBXGroup;
+			children = (
+				47D0CA391CB7800B00D15C10 /* AppDelegate.swift */,
+				47D0CA3B1CB7800B00D15C10 /* ViewController.swift */,
+				47D0CA3D1CB7800B00D15C10 /* Main.storyboard */,
+				47D0CA401CB7800B00D15C10 /* Assets.xcassets */,
+				47D0CA421CB7800B00D15C10 /* LaunchScreen.storyboard */,
+				47D0CA451CB7800B00D15C10 /* Info.plist */,
+			);
+			path = DynamicSnap;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47D0CA351CB7800B00D15C10 /* DynamicSnap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47D0CA481CB7800B00D15C10 /* Build configuration list for PBXNativeTarget "DynamicSnap" */;
+			buildPhases = (
+				47D0CA321CB7800B00D15C10 /* Sources */,
+				47D0CA331CB7800B00D15C10 /* Frameworks */,
+				47D0CA341CB7800B00D15C10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicSnap;
+			productName = DynamicSnap;
+			productReference = 47D0CA361CB7800B00D15C10 /* DynamicSnap.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47D0CA2E1CB7800B00D15C10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "石韬";
+				TargetAttributes = {
+					47D0CA351CB7800B00D15C10 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = JTMB8M6R9G;
+					};
+				};
+			};
+			buildConfigurationList = 47D0CA311CB7800B00D15C10 /* Build configuration list for PBXProject "DynamicSnap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47D0CA2D1CB7800B00D15C10;
+			productRefGroup = 47D0CA371CB7800B00D15C10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47D0CA351CB7800B00D15C10 /* DynamicSnap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47D0CA341CB7800B00D15C10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D0CA441CB7800B00D15C10 /* LaunchScreen.storyboard in Resources */,
+				47D0CA411CB7800B00D15C10 /* Assets.xcassets in Resources */,
+				47D0CA3F1CB7800B00D15C10 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47D0CA321CB7800B00D15C10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D0CA3C1CB7800B00D15C10 /* ViewController.swift in Sources */,
+				47D0CA3A1CB7800B00D15C10 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		47D0CA3D1CB7800B00D15C10 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47D0CA3E1CB7800B00D15C10 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		47D0CA421CB7800B00D15C10 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47D0CA431CB7800B00D15C10 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47D0CA461CB7800B00D15C10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		47D0CA471CB7800B00D15C10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47D0CA491CB7800B00D15C10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = DynamicSnap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.469519413-qq.DynamicSnap";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		47D0CA4A1CB7800B00D15C10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = DynamicSnap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.469519413-qq.DynamicSnap";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47D0CA311CB7800B00D15C10 /* Build configuration list for PBXProject "DynamicSnap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D0CA461CB7800B00D15C10 /* Debug */,
+				47D0CA471CB7800B00D15C10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47D0CA481CB7800B00D15C10 /* Build configuration list for PBXNativeTarget "DynamicSnap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D0CA491CB7800B00D15C10 /* Debug */,
+				47D0CA4A1CB7800B00D15C10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47D0CA2E1CB7800B00D15C10 /* Project object */;
+}
