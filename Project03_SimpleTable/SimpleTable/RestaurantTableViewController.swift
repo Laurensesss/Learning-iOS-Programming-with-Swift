@@ -37,6 +37,11 @@ class RestaurantTableViewController: UITableViewController {
       
   
   
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(true)
+    
+    navigationController?.hidesBarsOnSwipe = true
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -45,6 +50,9 @@ class RestaurantTableViewController: UITableViewController {
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     //     self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    
+    // Remove the title of the back button.
+    navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: nil, action: nil)
   }
   
   override func didReceiveMemoryWarning() {
@@ -197,6 +205,7 @@ class RestaurantTableViewController: UITableViewController {
       if let indexPath = tableView.indexPathForSelectedRow {
         let destinationController = segue.destinationViewController as! RestaurantDetailViewController
         destinationController.restaurant = restaurants[indexPath.row]
+        destinationController.path = indexPath
       }
     }
   }
