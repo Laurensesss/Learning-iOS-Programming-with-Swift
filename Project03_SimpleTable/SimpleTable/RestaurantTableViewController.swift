@@ -26,14 +26,10 @@ class RestaurantTableViewController: UITableViewController {
       Restaurant(name: "Royal Oak", type: "British", location: "2 Regency Street London SW1P 4BZ United Kingdom", phoneNumber: "343-988834", image: "royaloak.jpg", isVisited: false),
       Restaurant(name: "Thai Cafe", type: "Thai", location: "22 Charlwood Street London SW1V 2DY Pimlico", phoneNumber: "432-344050", image: "thaicafe.jpg", isVisited: false)
       ]
-      
-  
-      
   
   
   override func viewWillAppear(animated: Bool) {
     super.viewWillAppear(true)
-    
     navigationController?.hidesBarsOnSwipe = true
   }
   
