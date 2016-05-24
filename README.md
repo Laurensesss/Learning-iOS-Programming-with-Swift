@@ -10,6 +10,8 @@ Here, I'm going to keep updating my experience and and little demo projects and 
 1. [Clock](#Clock)
 2. [Stop Watch](#StopWatch)
 3. [Simple Table](#SimpleTable)
+4. [Dynamic Snap](#DynamicSnap)
+5. [Dynamic Gravity](#DynamicGravity)
 
 ***
 ## Project 01 - <a id="Clock" href="https://github.com/Laurensesss/Learning-iOS-Programming-with-Swift/tree/master/Project01_Clock">Clock</a>
@@ -21,3 +23,6 @@ Here, I'm going to keep updating my experience and and little demo projects and 
 
 ## Project 03 - <a id="SimpleTable" href="https://github.com/Laurensesss/Learning-iOS-Programming-with-Swift/tree/master/Project03_SimpleTable">Simple Table</a>
 ![SimpleTable](https://github.com/Laurensesss/Learning-iOS-Programming-with-Swift/blob/master/Final%20Display%20Pictures/SimpleTable.png)
+## Project 04 - <a id="DynamicSnap" href="https://github.com/Laurensesss/Learning-iOS-Programming-with-Swift/tree/master/Project04_DynamicSnap">Dynamic Snap</a>
+
+## Project 05 - <a id="DynamicGravity" href="https://github.com/Laurensesss/Learning-iOS-Programming-with-Swift/tree/master/Project05_DynamicGravity">Dynamic Gravity</a>
