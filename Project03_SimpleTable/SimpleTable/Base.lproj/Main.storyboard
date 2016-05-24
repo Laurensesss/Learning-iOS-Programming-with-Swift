@@ -42,7 +42,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="bC3-jB-KBi">
-                                                    <rect key="frame" x="70" y="0.0" width="508" height="55"/>
+                                                    <rect key="frame" x="70" y="0.0" width="508" height="53"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLM-dr-m0u">
                                                             <rect key="frame" x="0.0" y="0.0" width="508" height="20"/>
@@ -51,17 +51,17 @@
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dc6-Sj-1ab">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dc6-Sj-1ab">
                                                             <rect key="frame" x="0.0" y="21" width="508" height="17"/>
                                                             <animations/>
-                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJs-eq-I65">
-                                                            <rect key="frame" x="0.0" y="39" width="508" height="16"/>
+                                                            <rect key="frame" x="0.0" y="39" width="508" height="14"/>
                                                             <animations/>
-                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -140,7 +140,7 @@
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMf-ja-qMf">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMf-ja-qMf">
                                                             <rect key="frame" x="195" y="0.0" width="389" height="21"/>
                                                             <animations/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -156,6 +156,8 @@
                                             </subviews>
                                             <animations/>
                                             <constraints>
+                                                <constraint firstItem="EBk-mJ-UH8" firstAttribute="top" secondItem="Znk-IJ-uEM" secondAttribute="topMargin" constant="-1" id="Hbh-pa-3FA"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="EBk-mJ-UH8" secondAttribute="bottom" constant="-1" id="MQe-Sh-2oU"/>
                                                 <constraint firstItem="EBk-mJ-UH8" firstAttribute="centerY" secondItem="Znk-IJ-uEM" secondAttribute="centerY" id="XFX-VG-zCa"/>
                                                 <constraint firstAttribute="leadingMargin" secondItem="EBk-mJ-UH8" secondAttribute="leading" id="eHd-jo-KKT"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="EBk-mJ-UH8" secondAttribute="trailing" id="jyG-AZ-ibS"/>

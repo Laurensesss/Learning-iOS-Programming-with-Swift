@@ -17,7 +17,7 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
   //  @IBOutlet weak var restaurantLocation: UILabel!
   @IBOutlet weak var restaurantImageView: UIImageView!
   
-  var path: NSIndexPath?
+  var phoneNumber = ""
   var restaurant: Restaurant!
   
   override func viewDidLoad() {
@@ -38,6 +38,9 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
     
     
     title = restaurant.name
+    
+    tableView.estimatedRowHeight = 36.0
+    tableView.rowHeight = UITableViewAutomaticDimension
   }
   
   override func viewWillAppear(animated: Bool) {
@@ -47,7 +50,7 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
     navigationController?.setNavigationBarHidden(false, animated: true)
   }
   
- 
+  
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return 5
   }
@@ -68,7 +71,7 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
       cell.valueLabel.text = restaurant.location
     case 3:
       cell.fieldLabel.text = "Phone"
-      cell.valueLabel.text = "+86192892398" + String(path!.row)
+      cell.valueLabel.text = "+86" + phoneNumber
     case 4:
       cell.fieldLabel.text = "Been here"
       cell.valueLabel.text = restaurant.isVisited ? "Yes, I've been here before" : "NO"
