@@ -9,10 +9,26 @@
 import UIKit
 
 class ReviewViewController: UIViewController {
+  @IBOutlet weak var dislikeButton: UIButton!
+  @IBOutlet weak var goodButton: UIButton!
+  @IBOutlet weak var greatButton: UIButton!
   
   @IBOutlet var backgroundImageView: UIImageView!
   @IBOutlet var ratingStackView: UIStackView!
   var label: UILabel!
+  var rating: String?
+  
+  
+  @IBAction func ratingSelected(sender: UIButton) {
+    switch sender.tag {
+    case 100: rating = "dislike"
+    case 200: rating = "good"
+    case 300: rating = "great"
+    default: break
+    }
+    
+    performSegueWithIdentifier("unwindToDetailView", sender: sender)
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -26,15 +42,18 @@ class ReviewViewController: UIViewController {
     backgroundImageView.addSubview(blurEffectView)
     
     // Set the stackView's transform to zero.
-//    ratingStackView.transform = CGAffineTransformMakeScale(0, 0)
+    //    ratingStackView.transform = CGAffineTransformMakeScale(0, 0)
     
     // Set the stackView out of the screen.
-    ratingStackView.transform = CGAffineTransformMakeTranslation(0, 500)
+    //    ratingStackView.transform = CGAffineTransformMakeTranslation(0, 500)
     
     // Set two transforms together.
-    let scale = CGAffineTransformMakeScale(0, 0)
-    let translate = CGAffineTransformMakeTranslation(0, 500)
-    ratingStackView.transform = CGAffineTransformConcat(scale, translate)
+    //    let scale = CGAffineTransformMakeScale(0, 0)
+    //    let translate = CGAffineTransformMakeTranslation(0, 500)
+    //    ratingStackView.transform = CGAffineTransformConcat(scale, translate)
+    dislikeButton.transform = CGAffineTransformMakeTranslation(0, 500)
+    goodButton.transform = CGAffineTransformMakeTranslation(0, 500)
+    greatButton.transform = CGAffineTransformMakeTranslation(0, 500)
     
     createLabel()
   }
@@ -42,7 +61,7 @@ class ReviewViewController: UIViewController {
   
   func createLabel(){
     label = UILabel(frame: CGRect(x: 150, y: 400, width: 50, height: 30))
-    label.text = "AHA!"
+    label.text = "CHOOSE ONE!"
     label.layer.backgroundColor = UIColor.orangeColor().CGColor
     label.layer.borderWidth = 3
     label.layer.borderColor = UIColor.orangeColor().CGColor
@@ -56,18 +75,31 @@ class ReviewViewController: UIViewController {
   }
   
   
-  override func viewWillAppear(animated: Bool) {
-    super.viewWillAppear(true)
+  override func viewDidAppear(animated: Bool) {
+    super.viewDidAppear(true)
     //Create the animation of the ratingStackView.
-//    UIView.animateWithDuration(0.6, delay: 0, options: [], animations: {
-//      self.ratingStackView.transform = CGAffineTransformIdentity
-//      }) { (_) in
-//        self.view.addSubview(self.label)
-//    }
+    //    UIView.animateWithDuration(0.6, delay: 0, options: [], animations: {
+    //      self.ratingStackView.transform = CGAffineTransformIdentity
+    //      }) { (_) in
+    //        self.view.addSubview(self.label)
+    //    }
     
     // Create spring animation of the ratingStackView.
-    UIView.animateWithDuration(1, delay: 0, usingSpringWithDamping: 0.75, initialSpringVelocity: 0.2, options: [], animations: {
-        self.ratingStackView.transform = CGAffineTransformIdentity
+    UIView.animateWithDuration(0.7, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.1, options: [], animations: {
+      self.dislikeButton.transform = CGAffineTransformIdentity
+      }) { (_) in
+        
+    }
+    
+    
+    UIView.animateWithDuration(0.7, delay: 0.15, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.1, options: [], animations: {
+      self.goodButton.transform = CGAffineTransformIdentity
+      }, completion: { (_)in
+      })
+    
+    UIView.animateWithDuration(0.7, delay: 0.3, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.1, options: [], animations: { () -> Void in
+      self.greatButton.transform = CGAffineTransformIdentity
+      
       }) { (_) in
         self.view.addSubview(self.label)
     }
