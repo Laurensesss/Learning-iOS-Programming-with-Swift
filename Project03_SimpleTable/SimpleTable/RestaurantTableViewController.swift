@@ -27,23 +27,11 @@ class RestaurantTableViewController: UITableViewController {
       Restaurant(name: "Thai Cafe", type: "Thai", location: "22 Charlwood Street London SW1V 2DY Pimlico", phoneNumber: "432-344050", image: "thaicafe.jpg", isVisited: false)
       ]
   
-  
-  var selectedIndexPath: NSIndexPath?
-  
-  
   override func viewWillAppear(animated: Bool) {
     super.viewWillAppear(true)
-    
     navigationController?.hidesBarsOnSwipe = true
-    
   }
   
-  override func viewDidAppear(animated: Bool) {
-    super.viewDidAppear(true)
-    if let indexPath = selectedIndexPath {
-      tableView.deselectRowAtIndexPath(indexPath, animated: true)
-    }
-  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -79,8 +67,7 @@ class RestaurantTableViewController: UITableViewController {
   
   
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cellIdentifier = "Cell"
-    let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! RestaurantTableViewCell
+    let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! RestaurantTableViewCell
     
     // Configure the cell...
     cell.nameLabel.text = restaurants[indexPath.row].name
@@ -91,13 +78,18 @@ class RestaurantTableViewController: UITableViewController {
     
     //        cell.thumbnailImageView.layer.cornerRadius = cell.thumbnailImageView.bounds.height / 2
     //        cell.thumbnailImageView.clipsToBounds = true
-    cell.thumbnailImageView.layer.borderWidth = 3
+//    cell.thumbnailImageView.layer.borderWidth = 3
     cell.thumbnailImageView.layer.borderColor = UIColor.orangeColor().CGColor
     
     cell.accessoryType = self.restaurants[indexPath.row].isVisited ? .Checkmark : .None
     return cell
     
   }
+  
+  
+  
+  
+  
   
 //  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 //    // Create an option menu as an action sheet.
@@ -119,14 +111,14 @@ class RestaurantTableViewController: UITableViewController {
 //    let isVisitedAction = UIAlertAction(title: "I've been here", style: .Default, handler: { (_) in
 //      let cell = tableView.cellForRowAtIndexPath(indexPath)
 //      cell?.accessoryType = .Checkmark
-//      self.restaurantIsVisited[indexPath.row] = true
+//      self.restaurants[indexPath.row].isVisited = true
 //    })
 //    let isNotVisitedAction = UIAlertAction(title: "I've not been here", style: .Default) { (_) in
 //      let cell = tableView.cellForRowAtIndexPath(indexPath)
 //      cell?.accessoryType = .None
-//      self.restaurantIsVisited[indexPath.row] = false
+//      self.restaurants[indexPath.row].isVisited = false
 //    }
-//    let visitedAction = self.restaurantIsVisited[indexPath.row] ? isNotVisitedAction : isVisitedAction
+//    let visitedAction = self.restaurants[indexPath.row].isVisited ? isNotVisitedAction : isVisitedAction
 //    
 //    optionMenu.addAction(callAction)
 //    optionMenu.addAction(visitedAction)
@@ -135,7 +127,12 @@ class RestaurantTableViewController: UITableViewController {
 //    
 //    tableView.deselectRowAtIndexPath(indexPath, animated: true)
 //  }
-//  
+  
+  
+  
+  
+  
+  
   
   /*
   // Override to support conditional editing of the table view.
@@ -215,7 +212,6 @@ class RestaurantTableViewController: UITableViewController {
         let destinationController = segue.destinationViewController as! RestaurantDetailViewController
         destinationController.restaurant = restaurants[indexPath.row]
         destinationController.phoneNumber = restaurants[indexPath.row].phoneNumber
-        selectedIndexPath = indexPath
       }
     }
   }
