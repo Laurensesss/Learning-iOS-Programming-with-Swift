@@ -60,7 +60,7 @@ class ReviewViewController: UIViewController {
   
   
   func createLabel(){
-    label = UILabel(frame: CGRect(x: 130, y: 400, width: 100, height: 50))
+    label = UILabel(frame: CGRect(x: 100, y: 400, width: 150, height: 50))
     label.text = "CHOOSE ONE!"
     label.layer.backgroundColor = UIColor.orangeColor().CGColor
     label.layer.borderWidth = 3

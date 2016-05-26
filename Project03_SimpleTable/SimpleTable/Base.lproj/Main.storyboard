@@ -140,14 +140,14 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="195" height="21"/>
                                                             <animations/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMf-ja-qMf">
                                                             <rect key="frame" x="195" y="0.0" width="389" height="21"/>
                                                             <animations/>
                                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -197,6 +197,25 @@
                                     <segue destination="FA6-gS-pEz" kind="presentation" identifier="showReview" id="9PO-Gc-pMt"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3VK-WA-MQt">
+                                <rect key="frame" x="540" y="120" width="40" height="40"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="82q-p4-Sl2"/>
+                                    <constraint firstAttribute="height" constant="40" id="FGe-fx-WDX"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="map"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="yuv-pd-uGX" kind="show" identifier="showMap" id="sq5-ee-62T"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -204,8 +223,10 @@
                             <constraint firstItem="Pxi-Rc-FMM" firstAttribute="leading" secondItem="ImS-ZJ-mR3" secondAttribute="leading" id="7wg-n4-MuB"/>
                             <constraint firstItem="3Jn-hY-io9" firstAttribute="trailing" secondItem="ImS-ZJ-mR3" secondAttribute="trailingMargin" id="84C-HV-ye3"/>
                             <constraint firstItem="Pxi-Rc-FMM" firstAttribute="top" secondItem="ImS-ZJ-mR3" secondAttribute="top" id="C7Y-Vr-cPV"/>
+                            <constraint firstItem="3VK-WA-MQt" firstAttribute="trailing" secondItem="ImS-ZJ-mR3" secondAttribute="trailingMargin" id="Pcw-U4-xdc"/>
                             <constraint firstAttribute="trailing" secondItem="Pxi-Rc-FMM" secondAttribute="trailing" id="Uwq-p6-gJg"/>
                             <constraint firstItem="3Jn-hY-io9" firstAttribute="top" secondItem="dtI-Ff-jGy" secondAttribute="bottom" constant="8" id="Z2d-X1-bjv"/>
+                            <constraint firstItem="3VK-WA-MQt" firstAttribute="top" secondItem="3Jn-hY-io9" secondAttribute="bottom" constant="8" id="mf0-tL-gmF"/>
                             <constraint firstItem="7Rw-ZT-SDR" firstAttribute="top" secondItem="Pxi-Rc-FMM" secondAttribute="bottom" id="nOs-zY-WXd"/>
                         </constraints>
                     </view>
@@ -218,6 +239,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mDn-rC-Teb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1802" y="374"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="NlN-Ef-YTt">
+            <objects>
+                <viewController id="yuv-pd-uGX" customClass="MapViewController" customModule="SimpleTable" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oOM-ji-dj0"/>
+                        <viewControllerLayoutGuide type="bottom" id="aQ6-mC-Scn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CUc-ml-EB9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o7x-L1-B1I">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </mapView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="o7x-L1-B1I" secondAttribute="trailing" id="H2z-Dn-Wox"/>
+                            <constraint firstItem="o7x-L1-B1I" firstAttribute="leading" secondItem="CUc-ml-EB9" secondAttribute="leading" id="OOx-Cu-CeQ"/>
+                            <constraint firstItem="o7x-L1-B1I" firstAttribute="bottom" secondItem="aQ6-mC-Scn" secondAttribute="top" id="q0q-hu-1wG"/>
+                            <constraint firstItem="o7x-L1-B1I" firstAttribute="top" secondItem="CUc-ml-EB9" secondAttribute="top" id="x63-D2-2bV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="o7x-L1-B1I" id="tOr-JF-dQ1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WBf-y2-f2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1870" y="-307"/>
         </scene>
         <!--Review View Controller-->
         <scene sceneID="FAQ-V4-pfk">
@@ -389,6 +444,7 @@
         <image name="dislike" width="84" height="84"/>
         <image name="good" width="256" height="256"/>
         <image name="great" width="256" height="256"/>
+        <image name="map" width="48" height="48"/>
         <image name="rating" width="256" height="256"/>
     </resources>
 </document>

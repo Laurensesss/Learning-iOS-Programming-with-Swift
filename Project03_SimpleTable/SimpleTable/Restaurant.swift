@@ -24,5 +24,6 @@ class Restaurant {
     self.type = type
     self.phoneNumber = phoneNumber
     self.isVisited = isVisited
+//    self.rating = rating
   }
 }
