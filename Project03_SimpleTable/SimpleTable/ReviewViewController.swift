@@ -60,7 +60,7 @@ class ReviewViewController: UIViewController {
   
   
   func createLabel(){
-    label = UILabel(frame: CGRect(x: 150, y: 400, width: 50, height: 30))
+    label = UILabel(frame: CGRect(x: 130, y: 400, width: 100, height: 50))
     label.text = "CHOOSE ONE!"
     label.layer.backgroundColor = UIColor.orangeColor().CGColor
     label.layer.borderWidth = 3
@@ -85,19 +85,19 @@ class ReviewViewController: UIViewController {
     //    }
     
     // Create spring animation of the ratingStackView.
-    UIView.animateWithDuration(0.7, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.1, options: [], animations: {
+    UIView.animateWithDuration(0.7, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.2, options: [], animations: {
       self.dislikeButton.transform = CGAffineTransformIdentity
       }) { (_) in
         
     }
     
     
-    UIView.animateWithDuration(0.7, delay: 0.15, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.1, options: [], animations: {
+    UIView.animateWithDuration(0.7, delay: 0.15, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.2, options: [], animations: {
       self.goodButton.transform = CGAffineTransformIdentity
       }, completion: { (_)in
       })
     
-    UIView.animateWithDuration(0.7, delay: 0.3, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.1, options: [], animations: { () -> Void in
+    UIView.animateWithDuration(0.7, delay: 0.3, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.2, options: [], animations: { () -> Void in
       self.greatButton.transform = CGAffineTransformIdentity
       
       }) { (_) in
