@@ -27,11 +27,17 @@ class RestaurantTableViewController: UITableViewController {
       Restaurant(name: "Thai Cafe", type: "Thai", location: "22 Charlwood Street London SW1V 2DY Pimlico", phoneNumber: "432-344050", image: "thaicafe.jpg", isVisited: false)
       ]
   
+  var path: NSIndexPath?
+  
+  
+  @IBAction func unwindToHomeScreen(sender: UIStoryboardSegue) {
+    
+  }
+  
   override func viewWillAppear(animated: Bool) {
     super.viewWillAppear(true)
     navigationController?.hidesBarsOnSwipe = true
   }
-  
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -212,6 +218,7 @@ class RestaurantTableViewController: UITableViewController {
         let destinationController = segue.destinationViewController as! RestaurantDetailViewController
         destinationController.restaurant = restaurants[indexPath.row]
         destinationController.phoneNumber = restaurants[indexPath.row].phoneNumber
+        path = indexPath
       }
     }
   }

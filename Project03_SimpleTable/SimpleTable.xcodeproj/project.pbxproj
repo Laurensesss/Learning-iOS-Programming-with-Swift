@@ -19,6 +19,7 @@
 		478FE9FE1CF5D2CB00C4D1EE /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478FE9FD1CF5D2CB00C4D1EE /* ReviewViewController.swift */; };
 		479B82D61CF705F300A9803C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479B82D51CF705F300A9803C /* MapKit.framework */; };
 		479B82D81CF7112B00A9803C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479B82D71CF7112B00A9803C /* MapViewController.swift */; };
+		47C536301CFB1F77001A35A3 /* AddRestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C5362F1CFB1F77001A35A3 /* AddRestaurantController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		478FE9FD1CF5D2CB00C4D1EE /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		479B82D51CF705F300A9803C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		479B82D71CF7112B00A9803C /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		47C5362F1CFB1F77001A35A3 /* AddRestaurantController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRestaurantController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			children = (
 				477EC2F71CEF6B6A00311A77 /* AppDelegate.swift */,
 				477EC2FB1CEF6B6A00311A77 /* Main.storyboard */,
+				47C5362F1CFB1F77001A35A3 /* AddRestaurantController.swift */,
 				479B82D71CF7112B00A9803C /* MapViewController.swift */,
 				478FE9FD1CF5D2CB00C4D1EE /* ReviewViewController.swift */,
 				47D925E31CF43DD200772FD6 /* TableViewScene */,
@@ -179,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47C536301CFB1F77001A35A3 /* AddRestaurantController.swift in Sources */,
 				470CD98F1CF3232500012C75 /* Restaurant.swift in Sources */,
 				4771C91E1CF06B4C00BB70C0 /* RestaurantTableViewController.swift in Sources */,
 				478FE9FE1CF5D2CB00C4D1EE /* ReviewViewController.swift in Sources */,
