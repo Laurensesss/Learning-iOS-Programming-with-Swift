@@ -14,7 +14,6 @@ class ViewController: UIViewController {
   var dynamicAnimator = UIDynamicAnimator()
   
   @IBAction func buttonTapped(sender: UIButton) {
-    //确定动画绘制的场景
     dynamicAnimator = UIDynamicAnimator(referenceView: self.view)
     //创造并添加重力行为
     let gravityBehavior = UIGravityBehavior(items: [self.imageView])
