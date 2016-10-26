@@ -26,6 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     UIApplication.sharedApplication().statusBarStyle = .LightContent
     
+    
+    UITabBar.appearance().tintColor = UIColor.orangeColor()
+    UITabBar.appearance().barTintColor = UIColor(red: 230/255, green: 230/255, blue: 230/255, alpha: 1)
+    UITabBar.appearance().backgroundImage = UIImage(named: "tabbar-background")
+    
     return true
   }
 

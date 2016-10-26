@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		470CD98D1CF3124C00012C75 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470CD98C1CF3124C00012C75 /* RestaurantDetailViewController.swift */; };
 		470CD98F1CF3232500012C75 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470CD98E1CF3232500012C75 /* Restaurant.swift */; };
+		47714BB91D6C03A600580920 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47714BB71D6C03A600580920 /* About.storyboard */; };
+		47714BBE1D6C050600580920 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47714BBC1D6C050600580920 /* Discover.storyboard */; };
 		4771C91E1CF06B4C00BB70C0 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771C91D1CF06B4C00BB70C0 /* RestaurantTableViewController.swift */; };
 		4771C9201CF0742500BB70C0 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4771C91F1CF0742500BB70C0 /* RestaurantTableViewCell.swift */; };
 		477EC2F81CEF6B6A00311A77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477EC2F71CEF6B6A00311A77 /* AppDelegate.swift */; };
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		470CD98C1CF3124C00012C75 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		470CD98E1CF3232500012C75 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		47714BB81D6C03A600580920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/About.storyboard; sourceTree = "<group>"; };
+		47714BBD1D6C050600580920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Discover.storyboard; sourceTree = "<group>"; };
 		4771C91D1CF06B4C00BB70C0 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
 		4771C91F1CF0742500BB70C0 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		477EC2F41CEF6B6A00311A77 /* SimpleTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +78,8 @@
 			children = (
 				477EC2F71CEF6B6A00311A77 /* AppDelegate.swift */,
 				477EC2FB1CEF6B6A00311A77 /* Main.storyboard */,
+				47714BBC1D6C050600580920 /* Discover.storyboard */,
+				47714BB71D6C03A600580920 /* About.storyboard */,
 				47C5362F1CFB1F77001A35A3 /* AddRestaurantController.swift */,
 				479B82D71CF7112B00A9803C /* MapViewController.swift */,
 				478FE9FD1CF5D2CB00C4D1EE /* ReviewViewController.swift */,
@@ -171,6 +177,8 @@
 			files = (
 				477EC3021CEF6B6A00311A77 /* LaunchScreen.storyboard in Resources */,
 				477EC2FF1CEF6B6A00311A77 /* Assets.xcassets in Resources */,
+				47714BBE1D6C050600580920 /* Discover.storyboard in Resources */,
+				47714BB91D6C03A600580920 /* About.storyboard in Resources */,
 				477EC2FD1CEF6B6A00311A77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +205,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		47714BB71D6C03A600580920 /* About.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47714BB81D6C03A600580920 /* Base */,
+			);
+			name = About.storyboard;
+			sourceTree = "<group>";
+		};
+		47714BBC1D6C050600580920 /* Discover.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47714BBD1D6C050600580920 /* Base */,
+			);
+			name = Discover.storyboard;
+			sourceTree = "<group>";
+		};
 		477EC2FB1CEF6B6A00311A77 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
